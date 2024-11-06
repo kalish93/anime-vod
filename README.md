@@ -4,9 +4,9 @@ This project allows you to import and display top anime information from the Jik
 
 ## This project uses the following technologies:
 
-Backend: Laravel (PHP Framework)
-Database: MySQL
-API: Jikan API (External Service)
+- Backend: Laravel (PHP Framework)
+- Database: MySQL
+- API: Jikan API (External Service)
 Setup
 ## Follow the steps below to set up and run the project locally.
 
