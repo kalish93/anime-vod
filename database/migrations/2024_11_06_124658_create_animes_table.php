@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('mal_id')->unique();
             $table->json('titles');
+            $table->text('synopsis');
             $table->timestamps();
         });
     }

@@ -8,7 +8,8 @@ class Anime extends Model
 {
     protected $fillable = [
         "mal_id",
-        "titles"
+        "titles",
+        "synopsis"
     ];
     protected $casts = [
         'titles' => 'array'

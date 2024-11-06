@@ -24,7 +24,7 @@ class AnimeController extends Controller
 
         // If anime not found or the slug is not valid for the requested language
         if (!$anime) {
-            return Response::json(['message' => 'Anime not found or language mismatch.'], 404); 
+            return Response::json(['message' => 'Anime not found or language mismatch.'], 404);
         }
 
         // Return the anime data

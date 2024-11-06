@@ -41,6 +41,7 @@ class ImportAnime extends Command
             foreach ($animeData as $anime) {
                 // Prepare data for storage
                 $malId = $anime['mal_id'];
+                $synopsis = $anime['synopsis'];
                 $titles = [
                     'en' => [
                         'title' => $anime['title_english'] ?? null,
@@ -54,7 +55,8 @@ class ImportAnime extends Command
 
                 Anime::updateOrCreate(
                     ['mal_id' => $malId],
-                    ['titles' => json_encode($titles)]
+                    ['titles' => $titles,
+                        'synopsis' => $synopsis],
                 );
 
                 $this->info("Imported: " . $titles['en']['title']);
