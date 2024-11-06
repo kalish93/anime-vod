@@ -28,12 +28,14 @@ Create a database for the project. You can use tools like phpMyAdmin, MySQL Work
 
 Configure the Database Connection: In the .env file in the backend directory, set the correct database configuration values for DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD based on your local setup.
 
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=anime_vod
 DB_USERNAME=your_database_username
 DB_PASSWORD=your_database_password
+```
 Run Migrations: After configuring the database, run the Laravel migrations to set up the database tables:
 
 php artisan migrate
