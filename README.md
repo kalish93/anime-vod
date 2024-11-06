@@ -1,20 +1,20 @@
-#Anime VOD Project
+# Anime VOD Project
 
 This project allows you to import and display top anime information from the Jikan API. The backend is built using Laravel and is responsible for fetching data from Jikan, storing it in a MySQL database, and exposing API endpoints for accessing the anime data.
 
-##This project uses the following technologies:
+## This project uses the following technologies:
 
 Backend: Laravel (PHP Framework)
 Database: MySQL
 API: Jikan API (External Service)
 Setup
-##Follow the steps below to set up and run the project locally.
+## Follow the steps below to set up and run the project locally.
 
-###1. Clone the Repository
+### 1. Clone the Repository
 Clone the repository to your local machine using Git:
 
 git clone https://github.com/fikremariamF/anime-vod.git
-/###2. Install Dependencies
+### 2. Install Dependencies
 Navigate to the backend directory (or the directory where the Laravel backend resides):
 
 cd anime-vod
@@ -23,7 +23,7 @@ Then, install the required PHP dependencies using Composer:
 composer install
 If you don't have Composer installed, you can follow the instructions to install Composer here: https://getcomposer.org/download/.
 
-3. Set Up the Database
+## 3. Set Up the Database
 Create a database for the project. You can use tools like phpMyAdmin, MySQL Workbench, or the MySQL command line.
 
 Configure the Database Connection: In the .env file in the backend directory, set the correct database configuration values for DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD based on your local setup.
@@ -39,17 +39,17 @@ Run Migrations: After configuring the database, run the Laravel migrations to se
 php artisan migrate
 This will create the necessary tables in the database.
 
-###4. Running the Project Locally
+### 4. Running the Project Locally
 Run the Laravel Development Server:
 
 php artisan serve
 By default, this will run the backend on http://localhost:8000.
 
-###6. Access the API
+### 5. Access the API
 Once the server is running, you can access the API at the following URLs:
 
 API Base URL: http://localhost:8000/api
-##Running the Import Command
+## Running the Import Command
 The Laravel backend includes a console command that fetches the top 100 anime data from the Jikan API and stores it in the database.
 
 Run the Import Command:
@@ -58,7 +58,7 @@ You can run the import command via the terminal:
 php artisan import:anime
 This will fetch anime data and save it to your database.
 
-##API Endpoints
+## API Endpoints
 The backend provides the following API endpoints:
 
 1. Get Anime Data by Slug
