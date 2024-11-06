@@ -74,15 +74,29 @@ lang (string): Language code (e.g., en or pl).
 
 Example Request:
 
-GET /api/anime/fullmetal-alchemist?lang=en
+GET /api/anime/frieren-beyond-journeys-end?lang=en
 Example Response:
 
-```{
-  "id": 1,
-  "title": "Fullmetal Alchemist",
-  "slug": "fullmetal-alchemist",
-  "description": "A story about alchemy, adventure, and a brotherhood...",
-  "language": "en"
+```
+{
+    "anime": {
+        "id": 1,
+        "mal_id": 52991,
+        "titles": {
+            "en": {
+                "title": "Frieren: Beyond Journey's End",
+                "slug": "frieren-beyond-journeys-end"
+            },
+            "pl": {
+                "title": null,
+                "slug": ""
+            }
+        },
+        "synopsis": "During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them.\n\nHowever, the time that Frieren spends with her comrades is equivalent to merely a fraction of her life, which has lasted over a thousand years. When the party disbands after their victory, Frieren casually returns to her \"usual\" routine of collecting spells across the continent. Due to her different sense of time, she seemingly holds no strong feelings toward the experiences she went through.\n\nAs the years pass, Frieren gradually realizes how her days in the hero's party truly impacted her. Witnessing the deaths of two of her former companions, Frieren begins to regret having taken their presence for granted; she vows to better understand humans and create real personal connections. Although the story of that once memorable journey has long ended, a new tale is about to begin.\n\n[Written by MAL Rewrite]",
+        "created_at": "2024-11-06T14:14:31.000000Z",
+        "updated_at": "2024-11-06T14:27:12.000000Z"
+    }
+}
 }
 ```
 If the provided slug does not exist in the requested language or the lang does not match, an error response will be returned with a 404 status.
